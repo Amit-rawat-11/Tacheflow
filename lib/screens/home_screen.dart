@@ -6,6 +6,8 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:tacheflow/db/database.dart';
 import 'package:tacheflow/utils/todo_item.dart';
 
+import '../utils/date_format.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -78,8 +80,8 @@ void deleteTask(int index){
 
   TextEditingController newtask = TextEditingController();
 
-  int date = DateTime.now().day;
-  String month = "Dec";
+final int month = DateTime.now().month;
+
 
   @override
   Widget build(BuildContext context) {
@@ -121,7 +123,7 @@ void deleteTask(int index){
                     child: SizedBox(
                       width: 250,
                       child: Text(
-                        "Today is $date $month. A great day to conquer your goals!",
+                        "Today is $date ${monthName(month)} $year . A great day to conquer your goals!",
                         style: const TextStyle(
                           fontSize: 16,
                         ),
@@ -154,17 +156,10 @@ void deleteTask(int index){
             child: ListView.builder(
               itemCount: db.todolist.length,
               itemBuilder: (context, index) {
-                return Dismissible(
-                  key: ValueKey(index),
-                  onDismissed: (DismissDirection direction){
-                    deleteTask(index);
-                    print(index);
-                  },
-                  child: TodoItem(
-                    task: db.todolist[index][0],
-                    iscompleted: db.todolist[index][1],
-                    onChanged: (value) => taskclicked(value, index),
-                  ),
+                return TodoItem(
+                  task: db.todolist[index][0],
+                  iscompleted: db.todolist[index][1],
+                  onChanged: (value) => taskclicked(value, index),
                 );
               },
             ),
