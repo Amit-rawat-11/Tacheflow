@@ -1,10 +1,9 @@
 # TacheFlow
 
-TacheFlow is a sleek and efficient To-Do app built with Flutter, designed to simplify task management. It enables users to organize, prioritize, and track their daily activities with ease.
+TacheFlow is a sleek and efficient To-Do app built with Flutter, designed to simplify task management. It enables users to track their daily activities with ease.
 
 ## Features
 - Create, edit, and delete tasks effortlessly.
-- Categorize tasks for better organization.
 - Mark tasks as complete to track progress.
 - Minimalist design for a clutter-free experience.
 - Lightweight and optimized for performance.
@@ -22,7 +21,7 @@ TacheFlow is a sleek and efficient To-Do app built with Flutter, designed to sim
 ### Setup
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Amit-rawat-11/Tacheflow/
    ```
 2. Navigate to the project directory:
    ```bash
@@ -38,7 +37,12 @@ TacheFlow is a sleek and efficient To-Do app built with Flutter, designed to sim
    ```
 
 ## Screenshots
-Add app screenshots here to showcase its features and interface.
+
+### Splash Screen
+![Splash Screen v2](https://github.com/user-attachments/assets/b8cc6b9d-f9d0-4b11-b4bc-d744c9d8ef9c)  
+
+### Home Screen
+![Home Screen](https://github.com/user-attachments/assets/24763d57-632e-4201-89c8-ad3751bf2739)
 
 ## Contributions
 Contributions are welcome! Feel free to fork the repository, submit issues, or open pull requests.
@@ -47,4 +51,4 @@ Contributions are welcome! Feel free to fork the repository, submit issues, or o
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contact
-For questions or feedback, feel free to reach out at [your-email@example.com].
+For questions or feedback, feel free to reach out at rawatamit1206@gmail.com.
